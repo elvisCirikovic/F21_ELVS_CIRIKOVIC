@@ -1,6 +1,7 @@
 #pragma once
 
 #include "MirageUtils.h"
+#include "GameWindow.h"
 
 namespace Mirage
 {
@@ -14,6 +15,6 @@ namespace Mirage
 		MirageApp();
 
 	private:
-
+		GameWindow mGameWindow;
 	};
 }

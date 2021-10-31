@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ElvisGame", "ElvisGame\Elvi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mirage", "Mirage\Mirage.vcxproj", "{BD45605D-CA5D-4C79-A6FE-05094A4FB1AE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glfw", "glfw-3.3.4\build\src\glfw.vcxproj", "{C55AEE12-183F-3259-8C4E-345E15D229BE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glfw", "glfw-3.3.5\build\src\glfw.vcxproj", "{346AAF46-EC8D-3EE9-9A8B-1DF91D51B737}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,14 +33,14 @@ Global
 		{BD45605D-CA5D-4C79-A6FE-05094A4FB1AE}.Release|x64.Build.0 = Release|x64
 		{BD45605D-CA5D-4C79-A6FE-05094A4FB1AE}.RelWithDebInfo|x64.ActiveCfg = Release|x64
 		{BD45605D-CA5D-4C79-A6FE-05094A4FB1AE}.RelWithDebInfo|x64.Build.0 = Release|x64
-		{C55AEE12-183F-3259-8C4E-345E15D229BE}.Debug|x64.ActiveCfg = Debug|x64
-		{C55AEE12-183F-3259-8C4E-345E15D229BE}.Debug|x64.Build.0 = Debug|x64
-		{C55AEE12-183F-3259-8C4E-345E15D229BE}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
-		{C55AEE12-183F-3259-8C4E-345E15D229BE}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
-		{C55AEE12-183F-3259-8C4E-345E15D229BE}.Release|x64.ActiveCfg = Release|x64
-		{C55AEE12-183F-3259-8C4E-345E15D229BE}.Release|x64.Build.0 = Release|x64
-		{C55AEE12-183F-3259-8C4E-345E15D229BE}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
-		{C55AEE12-183F-3259-8C4E-345E15D229BE}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{346AAF46-EC8D-3EE9-9A8B-1DF91D51B737}.Debug|x64.ActiveCfg = Debug|x64
+		{346AAF46-EC8D-3EE9-9A8B-1DF91D51B737}.Debug|x64.Build.0 = Debug|x64
+		{346AAF46-EC8D-3EE9-9A8B-1DF91D51B737}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{346AAF46-EC8D-3EE9-9A8B-1DF91D51B737}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{346AAF46-EC8D-3EE9-9A8B-1DF91D51B737}.Release|x64.ActiveCfg = Release|x64
+		{346AAF46-EC8D-3EE9-9A8B-1DF91D51B737}.Release|x64.Build.0 = Release|x64
+		{346AAF46-EC8D-3EE9-9A8B-1DF91D51B737}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{346AAF46-EC8D-3EE9-9A8B-1DF91D51B737}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

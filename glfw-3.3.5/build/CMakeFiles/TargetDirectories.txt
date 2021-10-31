@@ -1,0 +1,7 @@
+C:/Users/cciri/Desktop/C++ Projects/ElvisGame/glfw-3.3.5/build/CMakeFiles/uninstall.dir
+C:/Users/cciri/Desktop/C++ Projects/ElvisGame/glfw-3.3.5/build/CMakeFiles/INSTALL.dir
+C:/Users/cciri/Desktop/C++ Projects/ElvisGame/glfw-3.3.5/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/cciri/Desktop/C++ Projects/ElvisGame/glfw-3.3.5/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/cciri/Desktop/C++ Projects/ElvisGame/glfw-3.3.5/build/src/CMakeFiles/update_mappings.dir
+C:/Users/cciri/Desktop/C++ Projects/ElvisGame/glfw-3.3.5/build/src/CMakeFiles/glfw.dir
+C:/Users/cciri/Desktop/C++ Projects/ElvisGame/glfw-3.3.5/build/src/CMakeFiles/INSTALL.dir

@@ -1,6 +1,6 @@
-set(SOURCE_FILES MirageApp.cpp)
+set(SOURCE_FILES MirageApp.cpp GameWindow.cpp GLFWimpl/GlfwImplementation.cpp)
 
-set(HEADER_FILES Mirage.h MirageApp.h MirageUtils.h)
+set(HEADER_FILES Mirage.h MirageApp.h MirageUtils.h WindowImplementation.h GameWindow.h GLFWimpl/GlfwImplementation.h)
 
 add_library(mirage_lib SHARED ${SOURCE_FILES} ${HEADER_FILES})
 
@@ -11,3 +11,4 @@ add_definitions(-DMIRAGE_LIB)
 target_link_libraries(mirage_lib glfw)
 
 include_directories(../glfw-3.3.5/include)
+include_directories(../Mirage)

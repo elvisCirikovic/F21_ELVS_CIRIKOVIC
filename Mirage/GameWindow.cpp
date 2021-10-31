@@ -7,11 +7,11 @@ namespace Mirage
 	GameWindow::GameWindow()
 	{
 #ifdef MIRAGE_WINDOWS
-		mWindow = new GlfwImplementation();
+		mWindow = std::unique_ptr<WindowImplementation>{ new GlfwImplementation() };
 #elif MIRAGE_MAC
-		mWindow = new GlfwImplementation();
+		mWindow = std::unique_ptr<WindowImplementation>{ new GlfwImplementation() };
 #elif MIRAGE_LINUX
-		mWindow = new GlfwImplementation();
+		mWindow = std::unique_ptr<WindowImplementation>{ new GlfwImplementation() };
 #else
 		#only_Windows_Linux_Mac_are_supported
 #endif

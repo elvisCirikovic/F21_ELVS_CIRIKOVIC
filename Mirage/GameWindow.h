@@ -2,6 +2,7 @@
 
 #include "MirageUtils.h"
 #include "WindowImplementation.h"
+#include "pch.h"
 
 namespace Mirage
 {
@@ -16,6 +17,6 @@ namespace Mirage
 		int GetWindowHeight() const;
 
 	private:
-		WindowImplementation* mWindow;
+		std::unique_ptr <WindowImplementation> mWindow;
 	};
 }

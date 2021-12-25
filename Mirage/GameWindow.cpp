@@ -39,4 +39,8 @@ namespace Mirage
 	{
 		return mWindow->GetWindowHeight();
 	}
+	void GameWindow::SetKeyPressedCallBack(std::function<void(KeyPressedEvent&)> func)
+	{
+		mWindow->SetKeyPressedCallBack(func);
+	}
 }

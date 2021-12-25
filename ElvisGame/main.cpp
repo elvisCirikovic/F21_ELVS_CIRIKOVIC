@@ -1,12 +1,4 @@
+#include "ElvisGameApp.h"
 #include "Mirage.h"
 
-class ElvisGameApp : public Mirage::MirageApp
-{
-	void OnUpdate() override
-	{
-
-	}
-
-};
-
-START_MIRAGE_GAME(ElvisGameApp)
+START_MIRAGE_GAME(ElvisGameApp);

@@ -86,8 +86,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MIRAGE_LIB;MIRAGE_WINDOWS;MIRAGE_OPENGL;MIRAGE_DEBUG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -100,8 +101,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MIRAGE_LIB;MIRAGE_WINDOWS;MIRAGE_OPENGL;MIRAGE_DEBUG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -114,11 +116,12 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>MIRAGE_LIB;MIRAGE_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MIRAGE_LIB;MIRAGE_WINDOWS;MIRAGE_OPENGL;MIRAGE_DEBUG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\cciri\Desktop\C++ Projects\ElvisGame\Mirage;C:\Users\cciri\Desktop\C++ Projects\ElvisGame\glfw-3.3.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)glad\include;C:\Users\cciri\Desktop\C++ Projects\ElvisGame\stbi;C:\Users\cciri\Desktop\C++ Projects\ElvisGame\Mirage;C:\Users\cciri\Desktop\C++ Projects\ElvisGame\glfw-3.3.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,11 +134,12 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>MIRAGE_LIB;MIRAGE_WINDOWS;MIRAGE_OPENGL;MIRAGE_DEBUG</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\cciri\Desktop\C++ Projects\ElvisGame\Mirage;C:\Users\cciri\Desktop\C++ Projects\ElvisGame\glfw-3.3.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)glad\include;C:\Users\cciri\Desktop\C++ Projects\ElvisGame\stbi;C:\Users\cciri\Desktop\C++ Projects\ElvisGame\Mirage;C:\Users\cciri\Desktop\C++ Projects\ElvisGame\glfw-3.3.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,26 +149,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Events.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="GLFWimpl\GlfwImplementation.h" />
+    <ClInclude Include="KeyCodes.h" />
     <ClInclude Include="Mirage.h" />
     <ClInclude Include="MirageApp.h" />
     <ClInclude Include="MirageUtils.h" />
+    <ClInclude Include="OpenGLimpl\OpenGLRenderer.h" />
+    <ClInclude Include="OpenGLimpl\OpenGLShader.h" />
+    <ClInclude Include="OpenGLimpl\OpenGLSprite.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RendererImplementation.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShaderImplementation.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="SpriteImplementation.h" />
     <ClInclude Include="WindowImplementation.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Events.cpp" />
     <ClCompile Include="GameWindow.cpp" />
     <ClCompile Include="GLFWimpl\GlfwImplementation.cpp" />
     <ClCompile Include="MirageApp.cpp" />
+    <ClCompile Include="OpenGLimpl\OpenGLRenderer.cpp" />
+    <ClCompile Include="OpenGLimpl\OpenGLShader.cpp" />
+    <ClCompile Include="OpenGLimpl\OpenGLSprite.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\glad\glad.vcxproj">
+      <Project>{51b497c4-eb25-40a6-ba5b-916a35de837c}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\glfw-3.3.5\build\src\glfw.vcxproj">
       <Project>{346aaf46-ec8d-3ee9-9a8b-1df91d51b737}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\stbi\stbi.vcxproj">
+      <Project>{e0b2174b-5914-49cb-895b-17bfcf886386}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

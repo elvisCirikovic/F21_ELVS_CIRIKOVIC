@@ -1,0 +1,2 @@
+just added a new enemy that slows you down if you touch it
+would have added more but got stuck on a dumb error for 3 days

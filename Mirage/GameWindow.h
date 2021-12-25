@@ -2,7 +2,9 @@
 
 #include "MirageUtils.h"
 #include "WindowImplementation.h"
+#include "Events.h"
 #include "pch.h"
+
 
 namespace Mirage
 {
@@ -15,6 +17,7 @@ namespace Mirage
 		void PollEvents();
 		int GetWindowWidth() const;
 		int GetWindowHeight() const;
+		void SetKeyPressedCallBack(std::function<void(KeyPressedEvent&)> func);
 
 	private:
 		std::unique_ptr <WindowImplementation> mWindow;

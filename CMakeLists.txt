@@ -15,7 +15,10 @@ elseif(UNIX)
 	add_definitions(-DMIRAGE_LINUX)
 endif()
 
+add_definitions(-DMIRAGE_OPENGL)
 
 add_subdirectory(ElvisGame)
 add_subdirectory(Mirage)
 add_subdirectory(glfw-3.3.5)
+add_subdirectory(glad)
+add_subdirectory(stbi)

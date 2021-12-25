@@ -10,3 +10,10 @@
 #else
 	#define MIRAGE_API
 #endif
+
+
+#ifdef MIRAGE_DEBUG
+	#define MIRAGE_LOG(x) std::cout<<x<<std::endl;
+#else
+	#define MIRAGE_LOG(x)
+#endif
